@@ -1,9 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnePage Website</title>
+</head>
 
+
+
+
+<body>
 <?php
 get_header();
 ?>
-
-<body>
     <div class="hero-section" id="home">
         <div class="hero-container">
             <div class="hero-text">
@@ -37,8 +46,7 @@ get_header();
                 </p>
             </div>
             <div class="about-us-img">
-                <img width="400" height="300"
-                    src="https://cdn.oink.bg/gallery/46830/1f0d8b82-29e2-4176-8e51-36e59cb1210c_large.webp">
+                <img src="https://cdn.oink.bg/gallery/46830/1f0d8b82-29e2-4176-8e51-36e59cb1210c_large.webp">
             </div>
         </div>
 
@@ -75,6 +83,7 @@ get_header();
     </div>
 
     <div class="contacts-section" id="contacts">
+        <h1 class="contacts-title" >Контакти</h1>
     <form >
             <label>
                 Име:
@@ -101,3 +110,4 @@ get_header();
 <?php
 get_footer();
 ?>
+</html>

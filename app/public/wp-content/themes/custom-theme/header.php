@@ -12,16 +12,16 @@
                 <a href=""> </a>
             </li>
             <li >
-                <a class="" href="#home">Home </a>
+                <a class="" href="#home">Начало </a>
             </li>
             <li>
-            <a class="" href="#services">Services</a>
+            <a class="" href="#services">Услуги</a>
             </li>
             <li>
-            <a class="" href="#about">About us</a>
+            <a class="" href="#about">За нас</a>
             </li>
             <li>
-            <a class="" href="#contacts">Contacts</a>
+            <a class="" href="#contacts">Контакти</a>
             </li>
 
     </nav>

@@ -3,7 +3,9 @@ Theme name:OnePage Website
 Author: Desislav
 Version: 123.8.2
 */
-
+/* :root{
+    margin:0px;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -11,15 +13,33 @@ Version: 123.8.2
 
 
 
-}
+} */
 
+
+/* html{
+    width: 100%;
+
+    scroll-behavior: smooth;
+    margin-top:0px;
+}
+body{
+     max-width: 1880px; 
+    width: 100%;
+    padding: 0px;
+    margin: -32px;
+     scroll-behavior: smooth; 
+} */
 html{
     scroll-behavior: smooth;
 }
-body{
-    max-width: 1880px;
-    width: 100%;
-    /* scroll-behavior: smooth; */
+
+html body{
+    padding: 0;
+    margin: 0;
+    margin-top:-36px;
+    background: rgb(228, 238, 173);
+    
+    
 }
 
 
@@ -29,20 +49,21 @@ body{
 } */
 header{
     
-    margin-top: -32px;
+    margin-top: 0px;
     padding: 0px;
-    max-width:1880px;
+    /* max-width:1880px; */
     
     
     
 }
 nav{
-    padding-top: 0px;
-    margin-top:0px;
+    width: 100%;
+    /* padding-top: 0px;
+    margin-top:0px; */
     position:fixed;
     background: #223746;
      height: 10vh;
-     width: 100%;
+     width: 105%;
     display:flex;
     justify-content:flex-start;
     align-items: center;
@@ -54,6 +75,7 @@ nav{
 nav a{
     text-decoration: none;
     color: white;
+    white-space: nowrap;
 }
 
 nav ul{
@@ -79,6 +101,7 @@ nav ul li{
 
 .hero-section{
     padding-top: 32px;
+    padding-bottom: 62px;
     /* background-image: url(https://myfitment.com/wp-content/uploads/2020/12/What-Are-Aftermarket-Car-Parts.jpg); */
     height: 100vh;
     width: 100%;
@@ -100,6 +123,7 @@ nav ul li{
    
     /* width: 60rem;
     height: 30rem; */
+    padding-top: 62px;
     width: 100%;
     align-items: center;
     position: relative;
@@ -156,6 +180,7 @@ nav ul li{
 
 .services-section{
     background: rgb(228, 238, 173);
+    width: 100%;
    
     height: 100vh;
     
@@ -176,7 +201,7 @@ nav ul li{
     flex-direction: row;
     justify-content: space-around;
     align-items:flex-start;
-    height: 40vh;
+    height: 50vh;
     width: 100%;
     background: #223746;
     color:white;
@@ -204,6 +229,8 @@ nav ul li{
 
 .footer-logo{
     border-radius: 50%;
+    height: 150px;
+    width: 150px;
 }
 
 .about-us-section{
@@ -219,13 +246,13 @@ nav ul li{
 }
 
 .about-us-section h1{
-    padding-top:2rem;
+    padding-top:5rem;
     margin-left: 3rem;
 }
 .about-us-section .about-us-container{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:flex-start;
     margin-top: 3rem;
     gap:5rem;
 
@@ -233,22 +260,21 @@ nav ul li{
 
 .about-us-section .about-us-container .about-us-text{
     display: flex;
-    flex: 1;
     margin-left: 3rem;
-    font-size: 20px;
+    font-size: 16px;
+    flex:1;
 }
 
 .about-us-section .about-us-container .about-us-img{
    display: flex;
-    flex: 2;
-   
-    
-   
-    
+   height: 200px;
+   width: 200px;
+   flex:1;
 }
 
 .services-section{
     background: rgb(228, 238, 173);
+    width: 100%;
    
     height: 100vh;
     display: grid;
@@ -269,7 +295,7 @@ grid-row-gap: 2px;
     flex-direction: column; */
     grid-area: auto;
     height:250px;
-    width: 400px;
+    width: 350px;
     margin-left: 7rem;
     margin-top: 3rem;
     /* border: 2px solid blue; */
@@ -297,6 +323,7 @@ grid-row-gap: 2px;
     display: flex;
     flex-direction:row;
     font-size: 10px;
+    overflow:hidden;
 
 }
 
@@ -305,6 +332,7 @@ grid-row-gap: 2px;
    
     height: 100vh;
    padding-top: 5rem;
+   width: 100%;
 }
 
 form {
@@ -362,3 +390,313 @@ textarea:focus {
 .button-submit:hover {
     background-color: #319246;
 }
+
+.contacts-title{
+    margin-left: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+/* For tablets: */
+html body{
+    
+    margin: -46px;
+}
+
+/* navbar */
+nav{
+    width: 110%;
+    
+    font-size: 12px;
+
+}
+.logo-img{
+    height: 35px;
+    width:35px;
+}
+
+/* hero section  */
+.hero-section .hero-container{
+    padding-top:20px;
+}
+
+.hero-section .hero-container .hero-text h1{
+   font-size: 22px;
+}
+
+.hero-section .hero-container .hero-text h2{
+    font-size: 16px;
+}
+
+
+
+.hero-section .hero-container .hero-call-to-action .hero-button{
+    width: 100px;
+    height: 25px;
+    background-color: rgb(248, 18, 18);
+    color:white;
+    border-radius: 5%;
+    border: solid 2px white;
+    cursor: pointer;
+    
+}
+
+
+.hero-section .audi{
+     height: 120px;
+    width: 200px; 
+   margin-top: 2rem;
+   overflow: hidden;
+    
+    border: solid 2px white;
+}
+
+
+
+
+/* about section  */
+    .about-us-section{
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+    }
+    
+    .about-us-section h1{
+        padding-top:2rem;
+        margin-left: 10rem;
+    }
+    .about-us-section .about-us-container{
+        
+        margin-top: 3rem;
+        gap:5rem;
+    
+    }
+    
+    .about-us-section .about-us-container .about-us-text{
+        display: flex;
+        margin-left: 6rem;
+        font-size: 14px;
+    }
+    
+    .about-us-section .about-us-container .about-us-img{
+      
+       margin-right: 2rem;
+    }
+
+    .about-us-section .about-us-container .about-us-img img{
+        height: 150px;
+        width: 200px;
+    }
+
+    /* service section  */
+    .services-section{
+        display: flex;
+        align-items: center;
+       flex-direction: column;
+        height: 220vh;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 2px;
+    
+    
+    
+        /* display: flex;
+        flex-direction: row; */
+    
+    }
+    
+    .services-section .service-posts{
+        /* display: flex;
+        flex-direction: column; */
+        grid-area: auto;
+        height:250px;
+        width: 200px;
+        margin-left: 7rem;
+        margin-top: 1rem;
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .services-section .service-posts .post-title{
+      font-size: 12px;
+      
+        
+    }
+    
+    .services-section .service-posts .post-content{
+        
+        
+        flex-direction:column;
+        overflow:hidden;
+    
+    }
+    .services-section .service-posts .post-content h2{
+        
+        font-size: 12px;
+    }
+
+    /* contact section */
+
+    .contacts-section{
+        background: rgb(228, 238, 173);
+       
+        height: 120vh;
+       padding-top: 5rem;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto 0;
+        max-width: 400px;
+        border: 2px solid #292727;
+        padding: 20px;
+        border-radius: 6px;
+        background-color: #cfe4d9;
+        
+    }
+    label {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+        color: #252323;
+    }
+
+    .footer{
+        height: 50vh;
+    }
+    .footer-column{
+        align-items: top;
+        justify-content: flex-start;
+        padding-left: 40px;
+        height: 100px;
+        width: 100px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .footer-column:nth-child(3){
+        margin-left: 50px;
+    }
+    .footer-logo{
+        height: 70px;
+        width: 70px;
+        margin-right: 20px;
+    }
+    
+  }
+
+
+  @media only screen and (max-width: 600px) {
+
+    /* For tablets: */
+    html body{
+        
+        margin: -46px;
+    }
+    
+    
+    
+    /* hero section  */
+    
+    .hero-section .hero-container .hero-text h1{
+       font-size: 20px;
+    }
+    
+    .hero-section .hero-container .hero-text h2{
+        font-size: 14px;
+    }
+    
+    
+    
+    
+    
+    /* about section  */
+        .about-us-section{
+           
+            background-color: rgb(10, 107, 39);
+        }
+        
+        .about-us-section h1{
+          
+            font-size: 20px;
+        }
+        
+        .about-us-section .about-us-container .about-us-text{
+           
+            font-size: 12px;
+        }
+        
+       
+    
+        /* service section  */
+        
+        
+        
+        
+           
+    
+        /* contact section */
+    
+        .contacts-section{
+            background: rgb(228, 238, 173);
+           
+            height: 120vh;
+           padding-top: 5rem;
+        }
+        .contacts-title{
+            font-size: 20px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto 0;
+            max-width: 300px;
+            border: 2px solid #292727;
+            padding: 20px;
+            border-radius: 6px;
+            background-color: #cfe4d9;
+            
+        }
+
+        .button-submit {
+            padding: 0.3rem 0.6rem;
+            font-size: 0.8rem;
+           
+        }
+        label {
+            font-size: 0.6rem;
+            margin-bottom: 0.5rem;
+            
+        }
+    
+        .footer{
+            height: 50vh;
+          
+        }
+        .footer-column{
+            align-items: top;
+            justify-content: flex-start;
+            padding-left: 50px;
+            height: 100px;
+            width: 70px;
+            font-size: 10px;
+            white-space: nowrap;
+        }
+        .footer-column:nth-child(3){
+            margin-left: 50px;
+        }
+        .footer-logo{
+            height: 70px;
+            width: 70px;
+            margin-right: 20px;
+        }
+        
+      }
